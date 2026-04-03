@@ -30,7 +30,7 @@ export default function WhatWeDo() {
         </h2>
 
         {/* Thematic Areas - 4 Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 sm:mb-10 md:mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 lg:gap-6 mb-8 sm:mb-10 md:mb-12">
           {themes.map((theme, index) => (
             <motion.div
               key={index}
@@ -38,18 +38,18 @@ export default function WhatWeDo() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
-              whileHover={{ y: -8 }}
-              className="bg-black p-4 sm:p-6 md:p-8 lg:p-10 rounded-none shadow-soft hover:shadow-hover transition-all duration-300 ease-out flex flex-col h-full min-h-[280px] sm:min-h-[340px] md:min-h-[400px] lg:min-h-[500px]"
+              whileHover={{ y: -4 }}
+              className="bg-black p-3 sm:p-4 md:p-6 lg:p-8 rounded-sm shadow-soft hover:shadow-hover transition-all duration-300 ease-out flex flex-col h-full"
             >
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-green-400 mb-3 sm:mb-4 md:mb-6 lg:mb-8 text-center leading-tight">
+              <h3 className="text-sm sm:text-base md:text-lg lg:text-2xl font-bold text-green-400 mb-2 sm:mb-3 md:mb-4 text-center leading-tight">
                 {theme.title}
               </h3>
-              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed mb-4 sm:mb-6 md:mb-8 lg:mb-10 flex-grow text-center">
+              <p className="text-xs sm:text-xs md:text-sm lg:text-base text-white leading-relaxed mb-3 sm:mb-4 flex-grow text-center">
                 {theme.description}
               </p>
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                className="w-auto mx-auto bg-yellow-400 text-black font-bold py-2 px-4 sm:py-2.5 sm:px-5 md:py-3 md:px-6 lg:py-3 lg:px-8 text-xs sm:text-sm md:text-base hover:bg-yellow-300 transition-all duration-300"
+                className="w-auto mx-auto bg-yellow-400 text-black font-bold py-1 px-3 sm:py-1.5 sm:px-3 md:py-2 md:px-4 lg:py-2.5 lg:px-6 text-xs sm:text-xs md:text-sm lg:text-base hover:bg-yellow-300 transition-all duration-300"
               >
                 LEARN MORE
               </motion.button>
