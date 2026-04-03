@@ -28,7 +28,7 @@ export default function Blog() {
   return (
     <AnimatedSection>
       <section className="py-8 sm:py-10 md:py-12 px-4 sm:px-6">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 sm:mb-10 md:mb-12">
+        <div className="flex flex-row items-center justify-between gap-4 mb-8 sm:mb-10 md:mb-12">
           <div className="flex items-center gap-4">
             <div className="w-8 sm:w-12 h-1 sm:h-1.5 bg-gray-400"></div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
