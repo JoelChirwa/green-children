@@ -1,10 +1,9 @@
 "use client"
 import { motion } from "framer-motion";
-import MagneticButton from "./MagneticButton";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-screen sm:min-h-screen md:h-screen flex items-center justify-center text-center overflow-hidden px-4 pt-16 sm:pt-20 md:pt-24 pb-16 sm:pb-20">
+    <section className="relative w-full h-[70vh] sm:h-screen md:h-screen flex items-center justify-center text-center overflow-hidden px-4 pt-16 sm:pt-20 md:pt-24 pb-16 sm:pb-20">
 
       {/* Background Image */}
       <img
@@ -40,10 +39,6 @@ export default function Hero() {
           animate={{ scale: 1 }}
           className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center items-center"
         >
-          <MagneticButton>
-            Join the Movement
-          </MagneticButton>
-
           <motion.button
             whileHover={{ scale: 1.05 }}
             className="border border-white text-white px-4 sm:px-8 py-2 sm:py-3 rounded-full font-semibold transition-all duration-500 ease-out hover:bg-white/10 hover:scale-105 text-xs sm:text-base"

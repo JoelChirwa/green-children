@@ -28,19 +28,11 @@ export default function Blog() {
   return (
     <AnimatedSection>
       <section className="py-8 sm:py-10 md:py-12 px-4 sm:px-6">
-        <div className="flex flex-row items-center justify-between gap-4 mb-8 sm:mb-10 md:mb-12">
-          <div className="flex items-center gap-4">
-            <div className="w-8 sm:w-12 h-1 sm:h-1.5 bg-gray-400"></div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
-              From the Blog
-            </h2>
-          </div>
-          <Link
-            href="/blog"
-            className="text-sm sm:text-base text-gray-400 hover:text-gray-600 transition-colors duration-300 font-medium"
-          >
-            View All
-          </Link>
+        <div className="flex items-center gap-4 mb-8 sm:mb-10 md:mb-12">
+          <div className="w-8 sm:w-12 h-1 sm:h-1.5 bg-gray-400"></div>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
+            From the Blog
+          </h2>
         </div>
 
         {/* Blog Cards Grid */}
@@ -70,15 +62,20 @@ export default function Blog() {
                 <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900 group-hover:text-green-700 transition-colors duration-300 leading-snug mb-3">
                   {post.title}
                 </h3>
-                <div className="flex items-center gap-2 text-xs sm:text-sm text-green-600 font-semibold group-hover:text-green-700 transition-colors">
-                  Read More
-                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
               </div>
             </motion.div>
           ))}
+        </div>
+
+        {/* View All Stories Button */}
+        <div className="flex justify-center mt-10 sm:mt-12 md:mt-16">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-green-700 text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-green-800 shadow-md hover:shadow-lg"
+          >
+            Read All Stories
+          </motion.button>
         </div>
       </section>
     </AnimatedSection>
