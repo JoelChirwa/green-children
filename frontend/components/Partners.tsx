@@ -84,7 +84,7 @@ export default function Partners() {
                   duration: 20,
                   repeat: Infinity,
                   ease: "linear",
-                  repeatMode: "loop",
+                  repeatType: "loop",
                 }}
               >
                 {/* Duplicate partners for seamless loop */}
