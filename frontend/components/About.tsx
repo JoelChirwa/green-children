@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <AnimatedSection>
-      <section className="py-8 sm:py-10 md:py-12 px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
+      <section className="py-8 sm:py-10 md:py-12 px-4 sm:px-8 md:px-16 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
 
         <div className="order-2 md:order-1 flex flex-col gap-6 sm:gap-8">
           <div className="overflow-hidden rounded-2xl shadow-soft transition-all duration-500 ease-out hover:shadow-hover hover:scale-105">
@@ -28,11 +28,11 @@ export default function About() {
             Who We Are
           </h2>
 
-          <p className="text-base sm:text-lg leading-relaxed text-gray-600 mb-3 sm:mb-4 transition-all duration-500 ease-out hover:text-gray-900">
+          <p className="text-base sm:text-lg leading-relaxed text-gray-600 mb-3 sm:mb-4 transition-all duration-500 ease-out hover:text-gray-900 text-justify">
             Green Children is a registered Malawian nonprofit environmental conservation organization dedicated to equipping young people aged 6–17 with environmental awareness and practical sustainability skills.
           </p>
 
-          <p className="text-base sm:text-lg leading-relaxed text-gray-600 mb-6 sm:mb-8 transition-all duration-500 ease-out hover:text-gray-900">
+          <p className="text-base sm:text-lg leading-relaxed text-gray-600 mb-6 sm:mb-8 transition-all duration-500 ease-out hover:text-gray-900 text-justify">
             Our approach is deeply child-centered, ensuring that learning is interactive, inclusive, and impactful. Our programs are designed to nurture a generation of environmentally conscious young leaders, individuals who not only understand sustainability challenges but are also empowered to take action and drive change within their communities.
           </p>
 

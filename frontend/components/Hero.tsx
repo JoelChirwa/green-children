@@ -38,7 +38,7 @@ export default function Hero() {
         <motion.div
           initial={{ scale: 0.9 }}
           animate={{ scale: 1 }}
-          className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center"
+          className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center items-center"
         >
           <MagneticButton>
             Join the Movement
@@ -46,7 +46,7 @@ export default function Hero() {
 
           <motion.button
             whileHover={{ scale: 1.05 }}
-            className="border border-white text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-semibold transition-all duration-500 ease-out hover:bg-white/10 hover:scale-105 text-sm sm:text-base"
+            className="border border-white text-white px-4 sm:px-8 py-2 sm:py-3 rounded-full font-semibold transition-all duration-500 ease-out hover:bg-white/10 hover:scale-105 text-xs sm:text-base"
           >
             Learn More
           </motion.button>

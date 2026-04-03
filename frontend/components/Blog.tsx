@@ -44,7 +44,7 @@ export default function Blog() {
         </div>
 
         {/* Blog Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
           {posts.map((post, index) => (
             <motion.div
               key={post.id}
@@ -52,23 +52,30 @@ export default function Blog() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
-              whileHover={{ y: -8 }}
-              className="overflow-hidden rounded-2xl shadow-soft hover:shadow-hover transition-all duration-300 ease-out cursor-pointer group"
+              whileHover={{ y: -12 }}
+              className="overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 ease-out cursor-pointer group bg-white"
             >
               {/* Image Container */}
-              <div className="overflow-hidden bg-gray-200 h-48 sm:h-56 md:h-64">
+              <div className="overflow-hidden bg-gray-200 h-40 sm:h-48 md:h-56 relative">
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
 
               {/* Content Container */}
-              <div className="p-5 sm:p-6 md:p-7 bg-white">
-                <h3 className="text-base sm:text-lg md:text-xl font-bold text-blue-900 group-hover:text-green-700 transition-colors duration-300 leading-snug">
+              <div className="p-4 sm:p-5 md:p-6">
+                <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900 group-hover:text-green-700 transition-colors duration-300 leading-snug mb-3">
                   {post.title}
                 </h3>
+                <div className="flex items-center gap-2 text-xs sm:text-sm text-green-600 font-semibold group-hover:text-green-700 transition-colors">
+                  Read More
+                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               </div>
             </motion.div>
           ))}
