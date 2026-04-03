@@ -69,10 +69,10 @@ export default function WhatWeDo() {
           >
             <div className="bg-soft p-6 sm:p-8 rounded-lg shadow-soft">
               <h3 className="text-xl sm:text-2xl font-bold text-green-700 mb-4">Why Environmental Conservation?</h3>
-              <p className="text-base sm:text-lg leading-relaxed text-gray-600 mb-4">
+              <p className="text-base sm:text-lg leading-relaxed text-gray-600 mb-4 text-justify">
                 Malawi faces critical environmental challenges including deforestation, climate change impacts, and biodiversity loss. These threats directly affect the future of our children and communities.
               </p>
-              <p className="text-base sm:text-lg leading-relaxed text-gray-600">
+              <p className="text-base sm:text-lg leading-relaxed text-gray-600 text-justify">
                 By building environmental awareness and action today, we create a generation of stewards equipped to protect and restore our natural heritage for tomorrow.
               </p>
             </div>
